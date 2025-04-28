@@ -178,4 +178,17 @@ git branch -v
 git merge 합쳐주고자 하는 브랜치명
 ```
 
+```bash
+git add .
+git commit -m "[docs]:브랜치 실습 test 합치기"
+```
+
+```bash
+git merge 합쳐주고자하는 브랜치명
+```
+
+### 4.8. 깃 브랜치 충돌 해결해 보기
+
+- 깃 브랜치를 merge 하면 많이 발생합니다.
+
 # GitHub
