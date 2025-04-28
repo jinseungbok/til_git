@@ -1,0 +1,94 @@
+<!-- 혼자서 작업하기(4/28 월) -->
+# Git
+
+## 1. Git 프로그램 설치
+- 프로그램 다운로드 : https://git-scm.com/
+- 64-bit Git for Windows Setup 설치
+
+## 2. Git 버전 확인
+- 윈도우 키보드 + R : `cmd` 입력
+
+```bash
+    git --version
+```
+
+- 출력창 확인
+
+## 3. VSCode에 Git 설정하기
+
+### 3.1. 터미널 환경을 git bash로 설정하기
+- 윈도우, 맥, 리눅스의 명령 창을 통일하기 위함.
+- 좌측 하단 관리 도구 선택 > 설정 메뉴 선택 > Settings
+- 설정 화면 > `default:Windows` 입력
+- `Git Bash` 선택
+- 설정 창 종료
+
+### 3.2. VSCode에서 Git옵션 설정하기
+- 터미널 실행 : `Ctrl + 백틱` 추천
+- Git 버전 확인
+- 
+``` bash
+git --version
+```
+
+- 기본 브랜치명을 'main'으로 설정
+``` bash
+git config --global init.defaultBranch main
+```
+- 윈도우, 맥, 리눅스 환경에서 Enter 키 처리를 통일함.
+``` bash
+git config --global core.autocrlf true
+```
+- 깃 commit 명령을 VSCode에서 작성하도록 설정.
+``` bash
+git config --global core.editor "code --wait"
+```
+- 깃 사용자 아이디 설정하기
+``` bash
+git config --global user.name "아이디"
+```
+- 깃 사용자 아이디 확인하기
+``` bash
+git config --global user.name
+```
+- 깃 사용자 이메일 저장하기
+``` bash
+git config --global user.email "이메일"
+```
+- 깃 사용자 이메일 확인하기
+``` bash
+git config --global user.email
+```
+
+## 4. 깃 작업하기 (실습)
+### 4.1. 깃 프로젝트 관리 초기화 하기
+``` bash
+git init
+```
+
+### 4.2. 깃 현재 상태 파악하기
+``` bash
+git status
+```
+
+### 4.3. 깃 현재 수정된 내용, 파일, 폴더 등을 저장하기
+- 원하는 파일만 저장하기
+``` bash
+git add README.md
+```
+- 모든 파일 및 폴더 저장하기(추천)
+``` bash
+git add .
+```
+
+### 4.4. 메모 남기기
+- 한줄 작업 메모
+``` bash
+git commit -m "깃 작업 관련 설명글 작성"
+```
+- 여러 줄 메모 작성하기(제목, 상세 내용)
+``` bash
+git commit
+```
+
+# GitHub
