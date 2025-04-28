@@ -305,3 +305,7 @@ git remote remove 원격이름
 ```bash
 git remote add 원격이름 https 주소
 ```
+- 이름바꾸기
+``` bash
+git remote rename 옛이름 새이름
+```
