@@ -363,3 +363,15 @@ git add .
 git commit -m "작업내용"
 git push origin 브랜치명
 ```
+
+git branch -v
+git fetch --all
+
+`내 로컬 branch 목록`
+git branch -v
+
+`내 깃허브 리모트 branch 목록`
+git branch -r
+
+`로컬, 깃허브 모든 branch 목록`
+git branch -a
