@@ -245,15 +245,15 @@ git merge 합쳐주고자하는 브랜치명
 
 ## 2. GitHub 프로젝트(Repository) 생성하기
 
-- 만약 til_git 프로젝트 생성한다면 GitHub에도 동일하게 생성하자.
-- public으로 셋팅 : 외부 소스 공개
+- 만약 til_git 프로젝트 생성해다면 GitHub 에도 동일하게 생성하자.
+- public 으로 셋팅 : 외부로 소스 공개
 - description 은 작성해 주자 : 프로젝트 설명
 
 ## 3. GitHub 인증하기
 
-### 3.1. 무조건 GitHub에 로그인된 상태로 시도하셔야 합니다.
+### 3.1. 무조건 GitHub 에 로그인 된 상태로 시도하셔야 합니다.
 
-### 3.2. `윈도우 > 자격 증명 관리자 > Windows 자격 증명`에서 GitHub 확인
+### 3.2. `윈도우 > 자격 증명 관리자 > Windows 자격 증명 ` 에서 gitHub 확인
 
 - 새로 생성하시길 권장합니다.
 - PC 정리 또는 자리 이동시 반드시 삭제하셔야 합니다.
@@ -262,30 +262,30 @@ git merge 합쳐주고자하는 브랜치명
 
 ### 4.1. 원격 저장소 주소 지정하기
 
-- `remote`는 원격(인터넷)을 말합니다.
-- `add`는 추가하라
+- `remote` : 원격(인터넷) 을 말합니다.
+- `add` : 추가하라
 - `origin`
   - http 주소를 간략하게 별칭을 준 것입니다.
   - 단어는 마음대로 하셔도 되요.
   - `원격 이름`을 말함.
 
 ```bash
-git remote add origin https://github.com/jinseungbok/til_git
+git remote add origin https://github.com/아이디/til_git.git
 ```
 
 ### 4.2. 원격 저장소 목록 보기
 
-```bashremote: Support for password authentication was removed on August 13, 2021.
+```bash
 git remote -v
 ```
 
 ### 4.3. 원격 저장소에 소스 등록하기
 
-- 습관적으로 하셨으면 좋은 작업(Ctrl + s)
+- 습관적으로 하셨으면 좋은 작업 (Ctrl + S, 즉, 저장 후)
 
 ```bash
 git add .
-git commit -m "[docs]최초등록"
+git commit -m "[docs]:최초등록"
 ```
 
 - 소스 업로드를 `push 한다`라고 합니다.
@@ -294,15 +294,17 @@ git commit -m "[docs]최초등록"
 git push -u origin main
 ```
 
-- `-u` 옵션을 붙이셨다면 이후로는 `git push`만 하면 됨.
+- `-u` 옵션을 붙이셨다면 이후로는 `git push` 하면 됨.
 
 ### 4.4. 원격 저장소 관리하기
+
+- 목록 보기
 
 ```bash
 git remote -v
 ```
 
-- 삭제하기
+- 삭제 하기
 
 ```bash
 git remote remove 원격이름
@@ -311,7 +313,7 @@ git remote remove 원격이름
 - 추가하기
 
 ```bash
-git remote add 원격이름 https 주소
+git remote add 원격이름 https주소
 ```
 
 - 이름바꾸기
@@ -330,6 +332,6 @@ git remote rename 옛이름 새이름
 
 ## 5. 깃허브의 소스를 다운로드 받아서 작업하는 법
 
-- `깃허브 주소`를 주의하셔야 합니다.
-- 코드 소스 기준은 `https`를 기준으로 하시면 됩니다.
-- 코드 소스 기준이 `SSH`면 인증을 다시 처리하는 과정 필요.
+- 깃허브 주소를 주의하셔야 합니다.
+- 코드 소스 기준은 `https` 로 진행 중입니다.
+- 코드 소스 기준이 `ssh` 면 인증을 다시 처리하는 과정 필요.
